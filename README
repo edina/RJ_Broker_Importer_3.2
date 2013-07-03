@@ -4,6 +4,7 @@ Repository Junction Broker.
 It is applicable to EPrints 3.2.2 to 3.2.9
 It is not applicable to EPrints 3.3
 
+INSTALLATION
 
 Step 1: copy the files into their appropriate places:
 
@@ -49,3 +50,6 @@ And edit it to read:
 
                             );
 
+TESTING
+The directory "example export files" contains some sample records, along with instructions
+for testing the raw deposit process.
