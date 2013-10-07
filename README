@@ -5,12 +5,34 @@ It is applicable to EPrints 3.2.2 to 3.2.9
 It is not applicable to EPrints 3.3
 
 INSTALLATION
+============
 
-Step 1: copy the files into their appropriate places:
+There are two options when it comes to inastalling these files: download the .zip file & unpack, or "clone" the
+repository as a working GIT system.
+
+The only difference is in how you get the files into your EPrints repository
+
+INSTALLATION VIA ZIP
+
+Step 1: Download the .zip file & unpack somewhere safe
+
+Step 2: copy the files into their appropriate places:
 
    cp -r cfg/* /<path_to_eprints_root>/archives/<archive_id>/cfg
 
-Step 2: Restart your server.
+INSTALLATION VIA GIT-CLONING
+
+Step 1: Greate a blank GIT repo at /path/to/eprints/archives/<ARCHIVEID>/
+
+   git init
+   
+Step 2: Pull the files down into your file-tree
+
+   git pull https://github.com/edina/RJ_Broker_Importer_3.2.git
+   
+FOR BOTH   
+
+Step 3: Restart your server.
 
 You can check that the new configuration has been loaded by getting the SWORD
 servicedocument & looking for the sword:acceptPackaging with a value of
