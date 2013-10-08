@@ -2,7 +2,7 @@ This is the SWORD importer to receive deposit packages from the
 Repository Junction Broker. 
 
 It is applicable to EPrints 3.2.2 to 3.2.9
-It is not applicable to EPrints 3.3
+For EPrints 3.3 use https://github.com/edina/RJ_Broker_epm
 
 INSTALLATION
 
