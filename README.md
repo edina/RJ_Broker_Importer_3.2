@@ -1,18 +1,21 @@
+RJ_Broker_Importer_3.2
+============
 This is the SWORD importer to receive deposit packages from the 
 Repository Junction Broker. 
 
 It is applicable to EPrints 3.2.2 to 3.2.9
-It is not applicable to EPrints 3.3
+For EPrints 3.3, use https://github.com/edina/RJ_Broker_epm
 
 INSTALLATION
-============
+--------
 
 There are two options when it comes to inastalling these files: download the .zip file & unpack, or "clone" the
 repository as a working GIT system.
 
 The only difference is in how you get the files into your EPrints repository
 
-INSTALLATION VIA ZIP
+h3. INSTALLATION VIA ZIP
+
 
 Step 1: Download the .zip file & unpack somewhere safe
 
@@ -20,7 +23,7 @@ Step 2: copy the files into their appropriate places:
 
    cp -r cfg/* /<path_to_eprints_root>/archives/<archive_id>/cfg
 
-INSTALLATION VIA GIT-CLONING
+h3. INSTALLATION VIA GIT-CLONING
 
 Step 1: Greate a blank GIT repo at /path/to/eprints/archives/<ARCHIVEID>/
 
@@ -30,7 +33,7 @@ Step 2: Pull the files down into your file-tree
 
    git pull https://github.com/edina/RJ_Broker_Importer_3.2.git
    
-FOR BOTH   
+h3. FOR BOTH   
 
 Step 3: Restart your server.
 
@@ -72,7 +75,7 @@ And edit it to read:
 
                             );
 
-TESTING
+h2. TESTING
 
 The directory "example export files" contains some sample records, along with instructions
 for testing the raw deposit process.
